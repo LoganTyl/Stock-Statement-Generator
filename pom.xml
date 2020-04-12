@@ -28,16 +28,11 @@
             <artifactId>openhtmltopdf-pdfbox</artifactId>
             <version>1.0.2</version>
         </dependency>
-        <dependency>
-            <groupId>org.freemarker</groupId>
-            <artifactId>freemarker</artifactId>
-            <version>2.3.30</version>
-        </dependency>
     </dependencies>
 
     <properties>
-        <maven.compiler.source>6</maven.compiler.source>
-        <maven.compiler.target>6</maven.compiler.target>
+        <maven.compiler.source>14</maven.compiler.source>
+        <maven.compiler.target>14</maven.compiler.target>
     </properties>
 
 
