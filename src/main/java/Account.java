@@ -23,17 +23,7 @@ public class Account {
         this.stock_trades = stock_trades;
     }
 
-    public double moneyStringToDouble(String balance){
-        double convertedBalance;
-        if(Character.toString(balance.charAt(0)).equals("$")){
-            String balWithoutSign = balance.substring(1, balance.length());
-            convertedBalance = Double.parseDouble(balWithoutSign);
-        }
-        else{
-            throw new IllegalArgumentException("Input must be a double with a '$' in front");
-        }
-        return convertedBalance;
-    }
+    public Account(){ };
 
     public int getAccount_num() {
         return account_num;

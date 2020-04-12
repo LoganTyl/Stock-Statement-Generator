@@ -1,21 +1,23 @@
 public class Transaction {
-    private Type type;
+    private String type;
     private String stock_symbol;
     private int count_shares;
     private double price_per_share;
 
-    public Transaction(Type type, String stock_symbol, int count_shares, double price_per_share) {
+    public Transaction(String type, String stock_symbol, int count_shares, double price_per_share) {
         this.type = type;
         this.stock_symbol = stock_symbol;
         this.count_shares = count_shares;
         this.price_per_share = price_per_share;
     }
 
-    public Type getType() {
+    public Transaction(){};
+
+    public String getType() {
         return type;
     }
 
-    public void setType(Type type) {
+    public void setType(String type) {
         this.type = type;
     }
 
