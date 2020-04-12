@@ -14,7 +14,7 @@ public class JsonToHtml {
 
     public void convertJsonToHtml(){
         JSONParser jsonParser = new JSONParser();
-        try(FileReader reader = new FileReader("stock_transations.by.account.holder.json")){
+        try(FileReader reader = new FileReader("test.json")){
             Object object = jsonParser.parse(reader);
             JSONArray stockList = (JSONArray) object;
             stockList.forEach(account -> {
@@ -82,13 +82,15 @@ public class JsonToHtml {
         outputStreamWriter.write(String.format("<h1>Name: %s %s; <small>Account Number: %d; Statement Date: %s</small></h1>", account.getFirst_name(), account.getLast_name(), account.getAccount_num(), dtf.format(now)));
         outputStreamWriter.write(String.format("<h2>SSN: %s</h2>", account.getSsn()));
         outputStreamWriter.write(String.format("<h2><u<Contact</u></h2>"));
-//        outputStreamWriter.write(String.format("<h3></h3>))
-//        outputStreamWriter.write("<table>");
-//        for (Course course:person.getCourses()) {
-//            // write each row here
-//
-//        }
-//        outputStreamWriter.write("</table>");
+        outputStreamWriter.write(String.format("<h3>Email: %s</h3>", account.getEmail()));
+        outputStreamWriter.write(String.format("<h3>Phone Number: %s</h3><br/><br/>", account.getPhone()));
+        outputStreamWriter.write("<table>");
+        outputStreamWriter.write("<tr><th>Transaction Type</th><th>Stock Symbol</th><th>Price Per Share</th><th>Total Shares Bought/Sold</th><th>Total Amount</th></tr>");
+        for (Transaction transaction: account.getStock_trades()) {
+            outputStreamWriter.write(String.format("<tr><td>%s</td><td>%s</td><td>$%d</td><td>%d</td><td>%d</td></tr>", transaction.getType(), transaction.getStock_symbol(), transaction.getPrice_per_share(), transaction.getCount_shares(), ((double) transaction.getCount_shares() * transaction.getPrice_per_share())));
+        }
+        outputStreamWriter.write("</table><br/><br/>");
+        outputStreamWriter.write(String.format("Account Balance: %d | Account Stock Holdings: %d", account.getBeginning_balance(), account.getStock_holdings_balance()));
         outputStreamWriter.write("</body></html>");
         outputStreamWriter.close();
     }
