@@ -39,7 +39,7 @@ public class Account {
     }
 
     public void setSsn(String ssn) {
-        if(Pattern.matches("^[0-9]]{3}-[0-9]]{2}-[0-9]]{4}$", ssn)){
+        if(Pattern.matches("[0-9]{3}-[0-9]{2}-[0-9]{4}", ssn)){
             this.ssn = ssn;
         }
         else{
