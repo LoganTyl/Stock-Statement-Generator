@@ -21,10 +21,11 @@ public class HtmlToPdf {
 
     private void convertFileToPdf(File file) throws Exception{
         String fileWithoutDomain = file.getName().replace(".html", "");
+        String fileAsHtm = file.getName().substring(0, file.getName().length()-1);
         try (OutputStream os = new FileOutputStream(String.format("pdf/%s.pdf", fileWithoutDomain))) {
             PdfRendererBuilder builder = new PdfRendererBuilder();
             builder.useFastMode();
-            builder.withUri(String.format("%s", file.getName()));
+            builder.withUri(String.format("file:html/%s", file.getName()));
             builder.toStream(os);
             builder.run();
         } catch (FileNotFoundException e) {
