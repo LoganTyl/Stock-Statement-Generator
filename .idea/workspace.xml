@@ -4,8 +4,11 @@
     <list default="true" id="12bd2fbc-c60a-4c92-a792-bed0f919a3c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HtmlToPdf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HtmlToPdf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JsonToHtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JsonToHtml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HtmlToPdfTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HtmlToPdfTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HtmlToPdf.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HtmlToPdf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JsonToHtml.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JsonToHtml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Transaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/HtmlToPdfTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HtmlToPdfTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +51,27 @@
       <recent name="C:\Users\Logan Tyler\Desktop\Classes\Quarter 7\Open Source Platforms Dev\Stock Statement Generator\json" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JsonToHtmlTest.testConvertJsonToHtml">
+  <component name="RunManager" selected="JUnit.HtmlToPdfTest.testWriteHtmlToPdf">
+    <configuration name="HtmlToPdfTest.testWriteHtmlToPdf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Stock Statement Generator" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HtmlToPdfTest" />
+      <option name="METHOD_NAME" value="testWriteHtmlToPdf" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HtmlToPdfTest.writeHtmlToPdf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Stock Statement Generator" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HtmlToPdfTest" />
+      <option name="METHOD_NAME" value="writeHtmlToPdf" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JsonToHtmlTest.convertJsonToHtml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Stock Statement Generator" />
       <option name="PACKAGE_NAME" value="" />
@@ -81,6 +104,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HtmlToPdfTest.testWriteHtmlToPdf" />
+        <item itemvalue="JUnit.HtmlToPdfTest.writeHtmlToPdf" />
         <item itemvalue="JUnit.JsonToHtmlTest.testConvertJsonToHtml" />
         <item itemvalue="JUnit.JsonToHtmlTest.convertJsonToHtml" />
         <item itemvalue="JUnit.JsonToHtmlTest.localDateWithStringFormat" />
@@ -113,29 +138,45 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="222" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586734737193" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586738239244">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1586742505369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586738239242" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586738239242">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586742505369" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1586742505369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586738239242" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586738239242">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586742505369" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1586742505369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586738239242" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586738239242">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586742505369" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1586742505369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586738239242" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586742505369" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1586742505369">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586742505369" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1586742505369">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586742505369" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1586742505369">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586742505369" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1586742505369">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586742505369" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1586715728805">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1586715728805" />
-    <state x="892" y="142" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586735811751">
+    <state x="892" y="142" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586742156425">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="892" y="142" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1586735811751" />
+    <state x="892" y="142" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1586742156425" />
   </component>
 </project>

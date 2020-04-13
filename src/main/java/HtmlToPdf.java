@@ -1,16 +1,40 @@
 import com.openhtmltopdf.pdfboxout.PdfRendererBuilder;
 
-import java.io.FileOutputStream;
-import java.io.OutputStream;
+import java.io.*;
 
 public class HtmlToPdf {
     public void writeHtmlToPdf() throws Exception{
-        try (OutputStream os = new FileOutputStream("/Users/me/Documents/pdf/out.pdf")) {
+        File[] files = new File("html/").listFiles();
+        iterateThroughFiles(files);
+    }
+
+    private void iterateThroughFiles(File[] files) throws Exception {
+        for(File file: files){
+            if(file.getName().contains(".html")){
+                convertFileToPdf(file);
+            }
+            else{
+                throw new IllegalArgumentException("File must have a '.html' extension");
+            }
+        }
+    }
+
+    private void convertFileToPdf(File file) throws Exception{
+        String fileWithoutDomain = file.getName().replace(".html", "");
+        try (OutputStream os = new FileOutputStream(String.format("pdf/%s.pdf", fileWithoutDomain))) {
             PdfRendererBuilder builder = new PdfRendererBuilder();
             builder.useFastMode();
-            builder.withUri("file:///Users/me/Documents/pdf/in.htm");
+            builder.withUri(String.format("%s", file.getName()));
             builder.toStream(os);
             builder.run();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("IOException");
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Exception");
         }
     }
 }
