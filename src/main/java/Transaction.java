@@ -1,10 +1,10 @@
 public class Transaction {
     private String type;
     private String stock_symbol;
-    private int count_shares;
+    private long count_shares;
     private double price_per_share;
 
-    public Transaction(String type, String stock_symbol, int count_shares, double price_per_share) {
+    public Transaction(String type, String stock_symbol, long count_shares, double price_per_share) {
         this.type = type;
         this.stock_symbol = stock_symbol;
         this.count_shares = count_shares;
@@ -29,11 +29,11 @@ public class Transaction {
         this.stock_symbol = stock_symbol;
     }
 
-    public int getCount_shares() {
+    public long getCount_shares() {
         return count_shares;
     }
 
-    public void setCount_shares(int count_shares) {
+    public void setCount_shares(long count_shares) {
         this.count_shares = count_shares;
     }
 

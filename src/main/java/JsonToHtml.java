@@ -36,7 +36,7 @@ public class JsonToHtml {
 
     private void parseAccountObject(JSONObject singleAccount) throws IOException {
         Account account = new Account();
-        account.setAccount_num((int) singleAccount.get("account_number"));
+        account.setAccount_num((long) singleAccount.get("account_number"));
         account.setSsn((String) singleAccount.get("ssn"));
         account.setFirst_name((String) singleAccount.get("first_name"));
         account.setLast_name((String) singleAccount.get("last_name"));
@@ -55,7 +55,7 @@ public class JsonToHtml {
         Transaction trans = new Transaction();
         trans.setType((String) singleTransaction.get("type"));
         trans.setStock_symbol((String) singleTransaction.get("stock_symbol"));
-        trans.setCount_shares((int) singleTransaction.get("count_shares"));
+        trans.setCount_shares((long) singleTransaction.get("count_shares"));
         trans.setPrice_per_share(moneyStringToDouble((String) singleTransaction.get("price_per_share")));
         transactionList.add(trans);
     }
@@ -87,10 +87,10 @@ public class JsonToHtml {
         outputStreamWriter.write("<table>");
         outputStreamWriter.write("<tr><th>Transaction Type</th><th>Stock Symbol</th><th>Price Per Share</th><th>Total Shares Bought/Sold</th><th>Total Amount</th></tr>");
         for (Transaction transaction: account.getStock_trades()) {
-            outputStreamWriter.write(String.format("<tr><td>%s</td><td>%s</td><td>$%d</td><td>%d</td><td>%d</td></tr>", transaction.getType(), transaction.getStock_symbol(), transaction.getPrice_per_share(), transaction.getCount_shares(), ((double) transaction.getCount_shares() * transaction.getPrice_per_share())));
+            outputStreamWriter.write(String.format("<tr><td>%s</td><td>%s</td><td>$%.2f</td><td>%d</td><td>$%.2f</td></tr>", transaction.getType(), transaction.getStock_symbol(), transaction.getPrice_per_share(), transaction.getCount_shares(), ((double) transaction.getCount_shares() * transaction.getPrice_per_share())));
         }
         outputStreamWriter.write("</table><br/><br/>");
-        outputStreamWriter.write(String.format("Account Balance: %d | Account Stock Holdings: %d", account.getBeginning_balance(), account.getStock_holdings_balance()));
+        outputStreamWriter.write(String.format("Account Balance: $%.2f | Account Stock Holdings: $%.2f", account.getBeginning_balance(), account.getStock_holdings_balance()));
         outputStreamWriter.write("</body></html>");
         outputStreamWriter.close();
     }

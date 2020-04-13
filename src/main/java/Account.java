@@ -1,7 +1,7 @@
 import java.util.List;
 
 public class Account {
-    private int account_num;
+    private long account_num;
     private String ssn;
     private String first_name;
     private String last_name;
@@ -11,7 +11,7 @@ public class Account {
     private double stock_holdings_balance;
     private List<Transaction> stock_trades;
 
-    public Account(int account_num, String ssn, String first_name, String last_name, String email, String phone, double beginning_balance, double stock_holdings_balance, List<Transaction> stock_trades) {
+    public Account(long account_num, String ssn, String first_name, String last_name, String email, String phone, double beginning_balance, double stock_holdings_balance, List<Transaction> stock_trades) {
         this.account_num = account_num;
         this.ssn = ssn;
         this.first_name = first_name;
@@ -25,11 +25,11 @@ public class Account {
 
     public Account(){ };
 
-    public int getAccount_num() {
+    public long getAccount_num() {
         return account_num;
     }
 
-    public void setAccount_num(int account_num) {
+    public void setAccount_num(long account_num) {
         this.account_num = account_num;
     }
 

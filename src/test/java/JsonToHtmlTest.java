@@ -6,6 +6,7 @@ import java.time.format.DateTimeFormatter;
 import static org.junit.jupiter.api.Assertions.*;
 
 class JsonToHtmlTest {
+    JsonToHtml jsonToHtml = new JsonToHtml();
     @Test
     void localDateWithStringFormat() {
         //arrange
@@ -19,6 +20,7 @@ class JsonToHtmlTest {
     }
 
     @Test
-    void convertJsonToHtml() {
+    void testConvertJsonToHtml() {
+        jsonToHtml.convertJsonToHtml();
     }
 }
