@@ -14,7 +14,7 @@ public class JsonToHtml {
 
     public void convertJsonToHtml(){
         JSONParser jsonParser = new JSONParser();
-        try(FileReader reader = new FileReader("test.json")){
+        try(FileReader reader = new FileReader("stock_transations.by.account.holder.json")){
             Object object = jsonParser.parse(reader);
             JSONArray stockList = (JSONArray) object;
             stockList.forEach(account -> {
