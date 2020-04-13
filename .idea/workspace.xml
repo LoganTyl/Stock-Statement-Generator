@@ -2,46 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19767cf6-275e-4270-9592-d7ab8a3fcee8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_openhtmltopdf_openhtmltopdf_core_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_openhtmltopdf_openhtmltopdf_pdfbox_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_rototor_pdfbox_graphics2d_0_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_pdfbox_fontbox_2_0_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_pdfbox_pdfbox_2_0_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_pdfbox_xmpbox_2_0_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Stock Statement Generator.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock Statement Generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Stock Statement Generator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neumont/csc180/tyler/logan/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HtmlToPdf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neumont/csc180/tyler/logan/HtmlToPdf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JsonToHtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neumont/csc180/tyler/logan/JsonToHtml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neumont/csc180/tyler/logan/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neumont/csc180/tyler/logan/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HtmlToPdfTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HtmlToPdfTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JsonToHtmlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JsonToHtmlTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HtmlToPdf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JsonToHtml.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Stock Statement Generator.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Program.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Transaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/AccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AccountTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HtmlToPdfTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HtmlToPdfTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/JsonToHtmlTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/JsonToHtmlTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TransactionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TransactionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neumont/csc180/tyler/logan/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neumont/csc180/tyler/logan/Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,22 +72,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586804298184" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586804605196">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586809941949">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586804605196" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586804605196">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586809941949" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586809941949">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586804605196" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586804605196">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586809941949" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586809941948">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586804605196" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586804605196">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586809941948" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586809941949">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586804605196" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586809941949" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1586804930690">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
