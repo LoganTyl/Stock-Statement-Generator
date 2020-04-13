@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.regex.Pattern;
 
 public class Account {
     private long account_num;
@@ -38,7 +39,12 @@ public class Account {
     }
 
     public void setSsn(String ssn) {
-        this.ssn = ssn;
+        if(Pattern.matches("^[0-9]]{3}-[0-9]]{2}-[0-9]]{4}$", ssn)){
+            this.ssn = ssn;
+        }
+        else{
+            throw new IllegalArgumentException("SSN must be formatted as '999-99-9999'");
+        }
     }
 
     public String getFirst_name() {
