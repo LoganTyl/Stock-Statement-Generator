@@ -18,7 +18,12 @@ public class Transaction {
     }
 
     public void setType(String type) {
-        this.type = type;
+        if(type.equalsIgnoreCase("Buy") || type.equalsIgnoreCase("Sell")){
+            this.type = type;
+        }
+        else{
+            throw new IllegalArgumentException("Type must be either 'Buy' or 'Sell'");
+        }
     }
 
     public String getStock_symbol() {

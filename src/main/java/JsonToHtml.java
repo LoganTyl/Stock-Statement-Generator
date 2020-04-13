@@ -105,9 +105,6 @@ public class JsonToHtml {
                 account.setBeginning_balance(account.getBeginning_balance() + (transaction.getCount_shares() * transaction.getPrice_per_share()));
                 account.setStock_holdings_balance(account.getBeginning_balance() - (transaction.getCount_shares() * transaction.getPrice_per_share()));
             }
-            else{
-                throw new IllegalArgumentException("Type must be either Buy or Sell");
-            }
         }
     }
 }
