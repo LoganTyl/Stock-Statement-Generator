@@ -9,5 +9,8 @@
         <module name="Stock Statement Generator" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Stock Statement Generator" target="14" />
+    </bytecodeTargetLevel>
   </component>
 </project>
