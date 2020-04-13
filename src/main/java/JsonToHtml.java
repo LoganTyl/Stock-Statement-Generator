@@ -81,7 +81,7 @@ public class JsonToHtml {
 
         outputStreamWriter.write(String.format("<h1>Name: %s %s; <small>Account Number: %d; Statement Date: %s</small></h1>", account.getFirst_name(), account.getLast_name(), account.getAccount_num(), dtf.format(now)));
         outputStreamWriter.write(String.format("<h2>SSN: %s</h2>", account.getSsn()));
-        outputStreamWriter.write(String.format("<h2><u<Contact</u></h2>"));
+        outputStreamWriter.write("<h2><u>Contact</u></h2>");
         outputStreamWriter.write(String.format("<h3>Email: %s</h3>", account.getEmail()));
         outputStreamWriter.write(String.format("<h3>Phone Number: %s</h3><br/><br/>", account.getPhone()));
         outputStreamWriter.write("<table>");
